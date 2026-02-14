@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Letter For You 💌</title>
+
+  <!-- Handwritten + cozy font (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Falling hearts container -->
+  <div id="hearts"></div>
+
+  <div class="container">
+    <div class="card">
+      <div class="envelope-wrap" id="envelopeWrap" onclick="openLetter()">
+        <div class="hint">Click to open 💗</div>
+
+        <div class="envelope" id="envelope">
+          <div class="flap"></div>
+          <div class="body"></div>
+          <div class="seal">❤</div>
+        </div>
+
+        <div class="subhint">A little letter from Tanmay</div>
+      </div>
+
+      <div class="letter" id="letter" aria-hidden="true">
+        <div class="letter-top">
+          <h2>My Love,</h2>
+
+          <!-- Music toggle -->
+          <button class="music-btn" id="musicBtn" onclick="toggleMusic(event)">
+            🎵 Music: Off
+          </button>
+        </div>
+
+        <div class="paper">
+          <p>
+            Sometimes I close my eyes and imagine you next to me — not on a video call,
+            not through a screen — but right here. And even though the miles are real,
+            my heart refuses to feel the distance.
+          </p>
+
+          <p>
+            Being long-distance has taught me something beautiful… love isn’t about proximity.
+            It’s about intention. It’s about choosing each other every single day — even when
+            it’s not easy.
+          </p>
+
+          <p class="emphasis">And I choose you.</p>
+
+          <p>
+            I choose you when I wake up. I choose you when I miss you.
+            I choose you when I count the days until I see you again.
+          </p>
+
+          <p>
+            You’re my comfort. My calm. My favorite notification.
+            My safest place — even from miles away.
+          </p>
+
+          <p>
+            One day, this distance will be just a story we tell.
+            And we’ll smile knowing we survived it because what we have is stronger than geography.
+          </p>
+
+          <p>
+            Until the day I can hold your hand instead of my phone,
+            please know my heart is always with you.
+          </p>
+
+          <p class="signature">
+            Forever yours,<br/>
+            Tanmay ❤️
+          </p>
+        </div>
+
+        <div class="footer-note">
+          <span>Tip: take a deep breath… and read slowly 🌸</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Put your piano mp3 inside the same folder and name it: piano.mp3 -->
+  <audio id="bgm" loop>
+    <source src="piano.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
